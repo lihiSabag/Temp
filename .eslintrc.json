@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["google"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "no-sparse-arrays": ["error"],
+    "no-unreachable": ["warn"],
+    "no-unreachable-loop": ["warn"],
+    "no-unsafe-negation": ["warn"],
+    "consistent-return": ["warn"],
+    "no-unused-vars": "off",
+    "camelcase": ["error"]
+  } //ignore err
+}

@@ -1,31 +1,39 @@
 <header>
-    <video id="myVideo" autoplay muted loop playsinline>
-        <source src="/assets/homePageBackground.mp4" type="video/mp4" style="background-color: rgba(0, 0, 0, 0.75)"> 
-    </video>
-            
-    <div class="video-overlay"></div>
-            
-    <div class="navbar">
-        <ul>
-            <li><a id="home"  class="active" href="/" >Home</a></li>
-            <li><a id="cal"  href="/calendar" >calendar</a></li>
-            <li><a id="cal"  href="/BusinessProfile" >Bus profile</a></li>
-            <!-- <li><a id="home"  href="/wellcomePage" >about</a></li> -->
+  <video id="myVideo" autoplay muted loop playsinline>
+      <source src="/assets/homePageBackground.mp4" type="video/mp4" style="background-color: rgba(0, 0, 0, 0.75)"> 
+  </video>
+          
+  <div class="video-overlay"></div>
+          
+  <div class="navbar">
+      <ul>
+          <li><a id="home"  class="active" href="/" >Home</a></li>
+          <li><a id="cal"  href="/calendar" >calendar</a></li>
+          <li><a id="cal"  href="/BusinessProfile" >Bus profile</a></li>
+          <li><a id="cal"  href="/about_page" >about</a></li>
+          <li><a id="cre"  href="/CreateBusinessP" >create Bus</a></li>
+          <li><a id="cal"  href="/editBusinessP" >edit bus</a></li>
+          <li><a id="cal"  href="/Delete_Account" >delete acc</a></li>
+          <li><a id="cal"  href="/Sign-Up-page" >signup</a></li>
+          <li><a id="cal"  href="/PersonalProfile" >personal</a></li>
+          <li><a id="cal"  href="/EditTrainingTypes" >edit training profile</a></li>
+          <!-- <li><a id="home"  href="/wellcomePage" >about</a></li> -->
 
-            <li><a id="login" href="/login" style="display: block;" >Login</a></li>  
-        </ul>
-        <ul ><li ><a className = logoutItem id="logout" href="/logout" style="display: none;" >logout</a></li></ul>
-    </div>
-                      
+          <li><a id="login" href="/login" style="display: block;" >Login</a></li>  
+      </ul>
+      <ul ><li ><a className = logoutItem id="logout" href="/logout" style="display: none;" >logout</a></li></ul>
+  </div>
+                    
 </header>
-    <script>
-        console.log("<%= connected %>");
-        if("<%= connected %>" == 'true'){
-            document.getElementById("login").style.display = 'none';
-            document.getElementById("logout").style.display = 'block';      
-        }
-        else{
-            document.getElementById("login").style.display = 'block';
-            document.getElementById("logout").style.display = 'none';
-        }               
-    </script>
+  <script>
+      console.log("<%= connected %>");
+      if("<%= connected %>" == 'true'){
+          document.getElementById("login").style.display = 'none';
+          document.getElementById("logout").style.display = 'block';      
+      }
+      else{
+          document.getElementById("login").style.display = 'block';
+          document.getElementById("logout").style.display = 'none';
+      }               
+  </script>
+

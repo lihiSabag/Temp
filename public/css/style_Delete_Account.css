@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(deleteAccount.jpg);
+    background-size: cover;
+}
+
+.delete-box{
+	width: 480px;
+	position: absolute;
+	top: 35%;
+	left: 55%;
+	transform: translate(-50%,-50%);
+	color: #0c0c0c;
+	background:none;
+	
+}
+
+.delete-box h1{
+	color: #0c0c0c;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+	padding: 22px 0;
+	background:none;
+}
+
+
+.text-box{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid #0c0c0c;
+	background:none;
+
+}
+.text-box input{
+	border: none;
+	outline: none;
+	background: none;
+	color: #0c0c0c;
+	font-size: 25px;
+	width: 450px;
+	float: left;
+	margin: 0 10px;
+	
+}
+
+input:focus {
+	box-shadow: 0 0 5px #f80909;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #f80909;
+  }
+
+  ::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	font-weight: bold;
+	color: black;
+  }
+
+  input[type = password]:focus {
+	box-shadow: 10 10 5px #ec695f;
+	padding: 6px 15px 6px 6px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #ec695f;
+  }
+
+.btn{
+	width: 100%;
+	background: none;
+	border: 2px solid#0c0c0c;
+	color: #f50b0b;
+	padding: 10px;
+	font-size: 25px;
+	cursor: pointer;
+	margin: 12px 0;
+	
+
+}
+
+.btn:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+

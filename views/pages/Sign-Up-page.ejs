@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style_Sign-Up.css">
+     \
+    
+</head>
+<body>
+    <div class="full-page">
+      
+        <div id='register-form'class='Registration-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='Trainer()'class='toggle-btn'>Trainer</button>
+                    <button type='button'onclick='Trainee()'class='toggle-btn'>Trainee</button>
+                </div>
+               
+                <form id='Trainee' class='input-group-Trainee'>
+                    <input type='text'class='input-field'placeholder='Full Name' required>
+                    <input type='email'class='input-field'placeholder='Email Id' required>
+                    <input type='password'class='input-field'placeholder='Enter Password' required>
+                    <input type='password'class='input-field'placeholder='Confirm Password'  required>
+                    <input type='checkbox'class='check-box'>
+                    <span class="Agreement">I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register Now</button>
+                    
+                </form>
+                <form id='Trainer' class='input-group-Trainer'>
+                    <input type='text'class='input-field'placeholder='Full Name' required>
+                    <input type='text'class='input-field'placeholder='Business Name' required>
+                    <input type='email'class='input-field'placeholder='Email Id' required>
+                    <input type='password'class='input-field'placeholder='Enter Password' required>
+                    <input type='password'class='input-field'placeholder='Confirm Password'  required>
+                    <input type='checkbox'class='check-box'>
+                    <span class="Agreement">I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register Now</button>
+                    
+                    </div>
+		        </form>
+            </div>
+        </div>
+       
+    </div>
+  
+    <script>
+        var x=document.getElementById('Trainer');
+		var y=document.getElementById('Trainee');
+		var z=document.getElementById('btn');
+		function Trainee()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function Trainer()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+    
+    
+</body>
+</html>

@@ -23,12 +23,14 @@ mongoose.connection.on("connected", () => {
 // Set EJS as templating engine
 app.set("view engine", "ejs");
 
-// MiddleWare
+
+
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 // for parsing application to x-www-form-urlencoded
 app.use(express.json());
 
+// app.use(cookieParser());
 
 
 app.listen(port, () => {
@@ -64,18 +66,34 @@ app.get("/homePage", (req, res) => {
 });
 
 
-app.get("/wellcomePage", (req, res) => {
-  connected ="true";
-  res.render("pages/wellcomePage",{connected:connected});
-});
+// app.get("/wellcomePage", wellcome);
 app.get("/BusinessProfile", (req, res) => {
   connected ="true";
   res.render("pages/BusinessProfile",{connected:connected});
 });
 
+app.get("/CreateBusinessP", (req, res) => {
+  connected ="true";
+  res.render("pages/CreateBusinessP",{connected:connected});
+});
+app.get("/editBusinessP", (req, res) => {
+  res.render("pages/editBusinessP");
+});
+app.get("/Delete_Account", (req, res) => {
+  connected ="true";
+  res.render("pages/Delete_Account",{connected:connected});
+});
+app.get("/Log-In-page", (req, res) => {
+  connected ="true";
+  res.render("pages/Log-In-page",{connected:connected});
+});
 
-app.get("/about", (req, res) => {
-  res.render("pages/about");
+app.get("/about_page", (req, res) => {
+  res.render("pages/about_page");
+});
+app.get("/EditTrainingTypes", (req, res) => {
+  connected ="true";
+  res.render("pages/EditTrainingTypes");
 });
 app.get("/logout", (req, res) => {
   connected = "false";
@@ -86,3 +104,4 @@ app.get("/logout", (req, res) => {
 app.post("/log", login);
 app.post("/signup", signup);
 app.post("/new",addTraining);
+app.post("/wellcomePage");
